@@ -9,6 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="./jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 	
+	<style>
+	/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+	.fullPage-slidesNav.bottom{
+		bottom: 25px;
+	}
+	</style>
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
@@ -18,7 +26,13 @@
 
 		$(document).ready(function() {
 
-			$('#fullpage').fullpage();
+			$('#fullpage').fullpage({
+				anchors: ['firstPage', 'secondPage', '3rdPage'],
+				sectionsColor: ['#FFCC00', '#FFFFFF', '#FFCC00'],
+				slidesNavigation: true,
+				navigationTooltips: ['Overview', 'Chairable','Gest-Rest'],
+				responsive: 900
+			});
 		});
 
 	</script>
@@ -27,23 +41,31 @@
 
 	<div id="fullpage">
 
-	<div class="section active" id="section0"><h1>fullPage.js</h1></div>
+	<div class="section active" id="section0"><h1>Hello World!</h1></div>
 
 	<div class="section" id="section1">
 
-	    <div class="slide "><h1>Simple Demo</h1></div>
+	    <div class="slide"><h1>Research Projects</h1>
+	    	<p>Scroll right to see more about individual projects...
+	    	</p>
+	    </div>
 
-	    <div class="slide active"><h1>Only text</h1></div>
+	    <div class="slide">
+	    	<h1>Chairables</h1>
+	    	<p>Designing interactive systems for people with mobility impairments presents unique challenges for Human Computer Interaction. Complex individual differences make it difficult to develop a single solution that will be suitable for every user. In addition to functional requirements, there are also social factors that impact the use of technology such as the stigma associated with assistive adaptations.
+			</p>
+			<p>My research has explored the application of wearable and ubiquitous computing concepts for wheelchair-based systems. The overall goal is to support users’ interaction with information technology through more natural and intuitive user interfaces. This work has implications for the design of future assistive technology systems, as well as more general applications for wearable and ubiquitous computing technology. In my research I have been designing mobile and wearable interactive systems for power wheelchair users, which we call Chairables.
+			</p>
+	    
+	    </div>
 
-	    <div class="slide"><h1>And text</h1></div>
-
-	    <div class="slide"><h1>And more text</h1></div>
+	    <div class="slide"><h1>The Gest-Rest</h1></div>
 
 	</div>
 
-	<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+	<div class="section" id="section2"><h1>About Me</h1></div>
 
-	<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+	<div class="section" id="section3"><h1>Contact</h1></div>
 
 </div>
 
