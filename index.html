@@ -1,13 +1,356 @@
-<html>
-  <head></head>
-  
-  <body>
-    <h1>Hello, Aria!!</h1>
+<!DOCTYPE HTML>
 
-    <p>This is a test page for github pages</p>
-    
-    <h2>Welcome to this new testSite</h2>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127337930-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  </body>
+  gtag('config', 'UA-127337930-1');
+</script>
 
+		<title>Patrick A. Carrington, Ph.D.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<meta name="description" content="Patrick Carrington's personal and professional webpage" />
+		<meta name="keywords" content="patrick, carrington, publications, chairable, patrick carrington, accessibility, wearables, research, umbc, student" />
+		<meta name="author" content="Patrick Carrington" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css?version=2.1" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/academicons.css" />
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/pubs.js?version=3.1"></script>
+
+
+	</head>
+	<body onload="getModDate()">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><img class="image" src="images/headshot2.jpg" alt="A headshot photo of me, Patrick Carrington, wearing a green shirt." /><strong>Patrick A. Carrington, Ph.D.</strong> <!-- Assistant Professor --></a>
+									<ul class="icons">
+										<li><a href="mailto:pcarrington@cmu.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+										<li><a href="https://twitter.com/justpac" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/patrick.carrington" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.linkedin.com/in/patrick-carrington/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+									</ul>
+									<button onclick="topFunction()" id="myBtn" title="Go to top" class="icon fa-chevron-up"><span class="label">Return to Top</span></button>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, I’m Patrick. </h1>
+											<p>An <strong>Assistant Professor</strong>
+												in the <strong><a href="http://hcii.cmu.edu">Human-Computer Interaction Institute</a></strong> in the <strong><a href="https://www.scs.cmu.edu/">School of Computer Science</a></strong>
+												at <strong><a href="http://www.cmu.edu">Carnegie Mellon University</a></strong> where I direct the <strong><a href="https://www.axle-lab.com">AXLE Lab</a></strong></p>
+
+
+
+
+
+
+
+										</header>
+										<p>I study accessibility, wearable technology, and build assistive technologies. As an accessibility and human-computer interaction researcher, I explore how technology can be used to understand human ability and support empowerment, independence, and improved quality of life. My research has focused on understanding user needs and designing technology systems that enhance and leverage the full potential of users with diverse abilities. While I spend a majority of my time on assistive technologies, I am also interested in web development, user experience, and physical computing.
+										</p>
+
+									<!-- REMOVED Prior Supervision
+										<p>I completed a postdoc working with <a href="http://www.jeffreybigham.com">Jeffrey Bigham</a> at <a href="http://www.cmu.edu">CMU</a>. I received my doctorate in <a href="http://hcc.umbc.edu/">Human-Centered Computing (HCC)</a> at <a href="http://www.umbc.edu">UMBC</a>, where I worked with <a href="http://amyhurst.com">Amy Hurst</a> in the <a href="http://isrc.umbc.edu">Interactive Systems Research Center (ISRC)</a> and <a href="http://pad.umbc.edu">Prototyping and Design Lab (The PAD)</a>.
+										</p>
+									-->
+
+										<ul class="actions">
+											<!-- <li><a href="#projects" class="button">Projects</a></li> -->
+											<li><a href="#publications" class="button">Publications</a></li>
+											<li><a target="_blank" href="docs/pdfs/PACarrington_CV.pdf" class="button">Full CV</a></li>
+											<!--<li><a href="#teaching" class="button">Teaching</a></li>-->
+											<li><a href="#contact" class="button">Contact</a></li>
+										</ul>
+										<!-- <a href="#" class="button special">Job Materials</a> -->
+									</div>
+									<span class="image object">
+										<img src="images/headshot2.jpg" alt="A headshot photo of me, Patrick Carrington, wearing a green shirt." />
+									</span>
+
+
+								</section>
+
+							<!-- Section -->
+								<section id="publications">
+									<header class="major">
+										<h2>Publications</h2>
+									</header>
+									<p>A majority of my publications can be found in the <a href="http://dl.acm.org/author_page.cfm?id=81549308756&cfid=690524888&cftoken=35712815">ACM Digital Library</a> or through <a href="https://scholar.google.com/citations?user=3ALpUOEAAAAJ&hl=en">Google Scholar</a>. For a full list of my publications see my <a target="_blank" href="docs/pdfs/PACarrington_CV.pdf">Curriculum Vitae</a>.</p>
+
+									<div id=pubfilters><span>Sort: &nbsp &nbsp</span>
+										<button onclick="showPubsByTopic()">by Topic</button>
+										<button onclick="showPubsByYear()">by Year</button>
+										<button onclick="showPubsByType()">by Type</button>
+									</div>
+
+									<script> //Runs the first time the page loads
+									showPubsByTopic()
+									</script>
+
+
+								</section>
+
+
+								<!--<section id="teaching">
+									<header class="major">
+										<h2>Teaching</h2>
+									</header>
+
+									<h3>Courses</h3>
+									<ul>
+										<li><p>Programming Usable Interfaces (SP2020,FA2020)</p></li>
+										<li><p>Accessibility (SP2021,FA2021,SP2022)</p></li>
+										<li><p>Designing Human-Centered Software (FA2022)</p></li>
+								</ul>
+
+							</section>-->
+
+
+									<!-- Special Feature Items
+									<section id="news">
+
+
+									<div class="features">
+										<article>
+											<span class="icon fa-diamond"></span>
+											<div class="content">
+												<h3>Portitor ullamcorper</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-paper-plane"></span>
+											<div class="content">
+												<h3>Sapien veroeros</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-rocket"></span>
+											<div class="content">
+												<h3>Quam lorem ipsum</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-signal"></span>
+											<div class="content">
+												<h3>Sed magna finibus</h3>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+							 End Comment	-->
+
+
+							<!-- Section -->
+								<section id="contact">
+									<header class="major">
+										<h2>Get In Touch</h2>
+									</header>
+
+									<div class="row">
+										<div class="6u 12u$(small)">
+												<ul class="contact">
+
+													<li class="fa-building-o">
+														Human-Computer Interaction Institute<br>
+														Carnegie Mellon University<br>
+														407 S. Craig Street, Room 201<br>
+														Pittsburgh, PA 15213</li>
+
+														<li class="fa-envelope-o"><a href="mailto:pcarrington@cmu.edu">pcarrington@cmu.edu</a></li>
+
+												</ul>
+											</div>
+										<div class="6u 12u$(small)">
+											<ul class="contact">
+
+												<li class="fa-twitter"><a href="https://twitter.com/justpac">@justpac</a></li>
+												<li class="fa-linkedin"><a href="https://www.linkedin.com/in/patrick-carrington">Patrick Carrington</a></li>
+
+
+											</ul>
+										</div>
+									</div>
+
+
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+
+									<ul>
+										<!-- <li><span class="announce">I am on the job market!</span></li> -->
+										<li><a href="index.html">Home</a></li>
+										<li><a href="#publications">Publications</a></li>
+										<li><a target="_blank" href="docs/pdfs/PACarrington_CV.pdf">Curriculum Vitae <i class="fa fa-external-link"></i></a></li>
+										<li><a href="https://axle-lab.com">AXLE Lab <i class="fa fa-external-link"></i></a></li>
+										<li><a href="resources.html">Resources <i class="fa fa-external-link"></i></a></li>
+										<li><a href="#contact">Contact</a></li>
+										 <!-- <li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li> -->
+									</ul>
+								</nav>
+
+
+
+
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Ph.D. Students</h2>
+									</header>
+
+									<ul class="contact-small">
+										<li class="fa-user"><strong><a href="https://franklin-li.com/">Franklin Mingzhe Li</a></strong></li>
+										<li class="fa-user"><strong><a href="https://www.yunzhi-li.com//">Yunzhi Li</a></strong></li>
+										<li class="fa-user"><strong><a href="https://www.frank.computer/">Frank Elavsky</a></strong></li>
+										<li class="fa-user"><strong><a href="https://joonbug.me/">Joon Jang</a></strong></li>
+										<li class="fa-user"><strong><a href="https://www.sanikamoharana.com/">Sanika Moharana</a></strong></li>
+									</ul>
+								</section>
+
+
+								<section>
+									<header class="major">
+										<h2>Courses</h2>
+									</header>
+									<ul>
+										<li>Programming Usable Interfaces </br>(SP2020,FA2020)</li>
+										<li>Accessibility </br>(SP2021,FA2021,SP2022)</li>
+										<li>Designing Human-Centered Software </br>(FA2022,SP2023,FA2023)</li>
+									</ul>
+
+							</section>
+
+								<section>
+									<header class="major">
+										<h2>Contact</h2>
+									</header>
+
+									<ul class="contact-small">
+										<li class="fa-user"><strong>Patrick Carrington, Ph.D.</strong></br>
+										Assistant Professor, HCII</br>
+										School of Computer Science</br>
+										Carnegie Mellon University</li>
+										<li class="fa-envelope-o"><a href="mailto:pcarrington@cmu.edu">pcarrington@cmu.edu</a></li>
+
+
+										<li class="fa-building-o">407 S. Craig Street, Room 201</li>
+
+									</ul>
+								</section>
+
+								<!-- Section -->
+								<!-- <section>
+									<header class="major">
+										<h2>Travel</h2>
+									</header>
+									<p>NWBT 2018 - Louisville, KY (April)</p>
+									<p>CHI 2018 - Montreal, Quebec, CA (April)</p>
+									<p>Microsoft Research - Seattle, WA (May)</p>
+									<p>HCIC 2018 - Watsonville, CA (June)</p>
+									<p>ASSETS 2018 - Galway, Ireland (October)</p>
+
+								</section>
+
+									<section>
+										<header class="major">
+											<h2>News</h2>
+										</header>
+										<div class="mini-posts">
+
+											<article>
+												<a href="http://assets18.sigaccess.org" class="image"><img src="images/assets18_logo.png" alt="Logo for the ASSETS 2018 Conference" /></a>
+												<p>Our paper on data use and sharing with wheelchair athletes was accepted to ASSETS 2018!</p>
+											</article>
+											<article>
+												<a href="https://www.engineering.pitt.edu/CampBioE/" class="image"><img src="images/2018-CampBioE.jpg" alt="logo for bio engineering camp at the university of pittsburgh. The tagline 'Inspiring Tomorrows Engineers' is in red and a graphic of chemistry glassware, DNA, and an atom are shown." /></a>
+												<p>I was invited to be on a panel discussing pathways to education and STEM careers. The panel was part of a summer camp for middle and high school students from underrepresented/minority and economically disadvantaged families. </p>
+											</article>
+											<article>
+												<a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+											</article>
+										</div>
+										<ul class="actions">
+											<li><a href="#" class="button">More</a></li>
+										</ul>-->
+									</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Patrick A. Carrington. <br>
+										<i id="modDate"></i> <br>
+									</p>
+
+
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+
+
+
+
+
+	</body>
 </html>

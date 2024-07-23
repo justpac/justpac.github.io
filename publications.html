@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+	<head>
+		<title>Patrick A. Carrington, Ph.D.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+		<meta name="description" content="Patrick Carrington's personal and professional webpage" />
+		<meta name="keywords" content="patrick, carrington, publications, chairable, patrick carrington, accessibility, wearables, research, umbc, student" />
+		<meta name="author" content="Patrick Carrington" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css?version=1.2" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<link rel="stylesheet" href="assets/css/academicons.css" />
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/pubs.js"></script>
+
+
+	</head>
+	<body onload="getModDate()">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><img class="image" src="images/headshot.jpg" alt="A headshot photo of me, Patrick Carrington, wearing a suit and tie." /><strong>Patrick A. Carrington, Ph.D.</strong> <!-- Postdoctoral Research Fellow --></a>
+									<ul class="icons">
+										<li><a href="mailto:pcarrington@cmu.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+										<li><a href="https://twitter.com/justpac" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="https://www.facebook.com/patrick.carrington" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+										<li><a href="https://www.linkedin.com/in/patrick-carrington/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+									</ul>
+									<button onclick="topFunction()" id="myBtn" title="Go to top" class="icon fa-chevron-up"><span class="label">Return to Top</span></button>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Publications</h1>
+
+										</header>
+
+										<p>A majority of my publications can be found in the <a href="http://dl.acm.org/author_page.cfm?id=81549308756&cfid=690524888&cftoken=35712815">ACM Digital Library</a> or through <a href="https://scholar.google.com/citations?user=3ALpUOEAAAAJ&hl=en">Google Scholar</a>. For a full list of my publications see my <a target="_blank" href="https://drive.google.com/open?id=0B6qLP0jaMpYrQllQLXFBR1RrNkE">Curriculum Vitae</a>.</p>
+
+										<div id=pubfilters><span>Sort: &nbsp &nbsp</span>
+											<button onclick="showPubsByTopic()">by Topic</button>
+											<button onclick="showPubsByYear()">by Year</button>
+											<button onclick="showPubsByType()">by Type</button>
+										</div>
+
+										<script> //Runs the first time the page loads
+										showPubsByTopic()
+										</script>
+
+								</section>
+
+							<!-- Section -->
+								<section id="publications">
+									<header class="major">
+										<h2>Publications</h2>
+									</header>
+
+
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section> -->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html#publications">Publications</a></li>
+										<li><a target="_blank" href="https://drive.google.com/open?id=0B6qLP0jaMpYrQllQLXFBR1RrNkE">Curriculum Vitae <i class="fa fa-external-link"></i></a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+										 <!-- <li>
+											<span class="opener">Submenu</span>
+											<ul>
+												<li><a href="#">Lorem Dolor</a></li>
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+											</ul>
+										</li> -->
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contact</h2>
+									</header>
+
+									<ul class="contact-small">
+										<li class="fa-user"><strong>Patrick Carrington, Ph.D.</strong><br>
+										Postdoctoral Fellow, HCII<br>
+										Carnegie Mellon University</li>
+										<li class="fa-envelope-o"><a href="mailto:pcarrington@cmu.edu">pcarrington@cmu.edu</a></li>
+
+										<li class="fa-phone"><a href="tel:+443-472-0310">+1 (443) 472-0310</a></li>
+										<li class="fa-building-o">NSH 2602L</li>
+
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Patrick A. Carrington. <br>
+										<i id="modDate"></i> <br>
+									Design: Adapted from <a href="https://html5up.net">HTML5 UP</a>.</p>
+
+
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+
+
+
+
+
+	</body>
+</html>
